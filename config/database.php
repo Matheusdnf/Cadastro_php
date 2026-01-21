@@ -1,8 +1,10 @@
 <?php
-$host = $_ENV['DB_HOST'] ?? 'localhost';
-$db   = $_ENV['DB_NAME'] ?? 'usuarios_db';
-$user = $_ENV['DB_USER'] ?? 'root';
-$pass = $_ENV['DB_PASS'] ?? '';
+require_once __DIR__ . '/../config/env.php';
+
+$host = $_ENV['DB_HOST'] ;
+$db   = $_ENV['DB_NAME'] ;
+$user = $_ENV['DB_USER'] ;
+$pass = $_ENV['DB_PASS'] ;
 $charset = "utf8mb4";
 
 
