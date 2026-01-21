@@ -1,0 +1,10 @@
+CREATE DATABASE usuarios_db CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+
+USE usuarios_db;
+
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  telefone VARCHAR(20) NOT NULL
+);
