@@ -173,7 +173,6 @@ input:focus {
   background-color: #218838;
 }
 
-/* Variação Alerta/Erro */
 .modal-alert .modal-content {
   border-top: 6px solid #dc3545;
 }
