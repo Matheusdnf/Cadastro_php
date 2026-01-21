@@ -36,3 +36,11 @@ O projeto utiliza um arquivo de configuração para conectar ao banco de dados.
    DB_USER=seu_usuario
    DB_PASS=sua_senha
    ```
+### ⚠️ Configuração Importante do PHP
+Para que o PHP consiga se comunicar com o banco de dados MySQL, você deve garantir que a extensão **PDO MySQL** esteja habilitada no seu arquivo de configuração do PHP:
+
+1. Localize o seu arquivo `php.ini`.
+2. Procure pela linha `;extension=pdo_mysql`.
+3. Remova o ponto e vírgula (`;`) do início da linha para ativá-la:
+   ```ini
+   extension=pdo_mysql
