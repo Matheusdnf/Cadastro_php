@@ -80,7 +80,6 @@ function Validate_register() {
   const cell_regex = /^\(\d{2}\)\s?\d{4,5}-\d{4}$/;
 
   if (!cell_regex.test(cell_Value)) {
-    // Se você já tiver a função mostrarAviso criada anteriormente:
     if (typeof alert_menssage === "function") {
       alert_menssage("Telefone inválido! Use o padrão (99) 99999-9999");
     } else {
